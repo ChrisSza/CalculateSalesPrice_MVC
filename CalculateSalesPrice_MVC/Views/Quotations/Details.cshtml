@@ -1,0 +1,58 @@
+﻿@model CalculateSalesPrice_MVC.Models.Quotation
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4> Your Quotation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SalePrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SalePrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Discount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Discount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DiscountAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiscountAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalPrice)
+
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreateAt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreateAt)
+
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.QuotationId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
